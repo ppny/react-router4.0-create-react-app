@@ -5,13 +5,13 @@ import {
   Route,
   Link
 } from 'react-router-dom';
-import Topic4 from './Home'
 class Home extends Component {
     
     render() {
         return (
             <div>
-					    <h2>About</h2>
+					    <h2>登陆</h2>
+					    <Link to="/register">去注册</Link>
 					  </div>
         )
     }

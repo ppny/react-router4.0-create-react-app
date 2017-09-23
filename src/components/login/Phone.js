@@ -6,14 +6,16 @@ import {
   Link
 } from 'react-router-dom';
 
-class Home extends Component {
+class Topic extends Component {
+    
     render() {
+    	const {match} = this.props
         return (
             <div>
-					    <h2>Home</h2>
-					  </div>
+			    <h3>手机注册</h3>			    
+			</div>
         )
     }
 }
 
-export default Home
+export default Topic

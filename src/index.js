@@ -6,23 +6,28 @@ import {
   Link
 } from 'react-router-dom';
 
-import Home from './Home'
-import About from './About'
-import Topics from './Topics'
+import Index from './components/Index'
+import Login from './components/login/Login'
+import Register from './components/login/Register'
+
+/*class About extends Component {
+    
+    render() {
+        return (
+            <div>
+					    <h2>About</h2>
+					  </div>
+        )
+    }
+}*/
+
 const BasicExample = () => (
   <Router>
     <div>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/topics">Topics</Link></li>
-      </ul>
-
-      <hr/>
-
-      <Route exact path="/" component={Home}/>
-      <Route path="/about" component={About}/>
-      <Route path="/topics" component={Topics}/>
+      <Route exact path="/" component={Index}/>
+      <Route exact path="/index" component={Index}/>
+      <Route path="/login" component={Login}/>
+      <Route path="/register" component={Register}/>
     </div>
   </Router>
 )
