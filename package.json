@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "antd": "^2.12.1",
+    "gantt-for-react": "^0.1.0",
+    "moment": "^2.19.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-router": "^4.2.0",

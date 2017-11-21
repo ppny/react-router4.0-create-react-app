@@ -3,13 +3,14 @@ import ReactDOM from 'react-dom';
 import {
   BrowserRouter as Router,
   Route,
-  Link
+  Link,
+  Switch
 } from 'react-router-dom';
 
 import Index from './components/Index'
 import Login from './components/login/Login'
 import Register from './components/login/Register'
-
+import Notfund from './components/Nofund'
 /*class About extends Component {
     
     render() {
@@ -24,10 +25,11 @@ import Register from './components/login/Register'
 const BasicExample = () => (
   <Router>
     <div>
-      <Route exact path="/" component={Index}/>
-      <Route exact path="/index" component={Index}/>
+    <Switch>
       <Route path="/login" component={Login}/>
       <Route path="/register" component={Register}/>
+      <Route component={Index} exact/>
+    </Switch>
     </div>
   </Router>
 )

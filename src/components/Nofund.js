@@ -5,20 +5,14 @@ import {
   Route,
   Link
 } from 'react-router-dom';
+import Project from './Project'
 class Home extends Component {
-
-    go(){
-        this.props.history.push('/register')
-    }
-
     render() {
         return (
             <div>
-                <h2>登陆</h2>
-                {console.log(this.props)}
-                <Link to="/register">去注册</Link>
-                <button onClick={this.go.bind(this)}>点击注册</button>
+              40440404
             </div>
+
         )
     }
 }
